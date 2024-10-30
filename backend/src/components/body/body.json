@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_body_bodies",
+  "info": {
+    "displayName": "BODY",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Dimension": {
+      "type": "string"
+    },
+    "Weight": {
+      "type": "string"
+    },
+    "Build": {
+      "type": "text"
+    },
+    "Colors": {
+      "type": "string"
+    }
+  }
+}

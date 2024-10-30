@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_connectivity_connectivities",
+  "info": {
+    "displayName": "CONNECTIVITY"
+  },
+  "options": {},
+  "attributes": {
+    "WiFi": {
+      "type": "string"
+    },
+    "Bluetooth": {
+      "type": "string"
+    },
+    "SIM": {
+      "type": "string"
+    },
+    "GPS": {
+      "type": "string"
+    },
+    "USB": {
+      "type": "string"
+    },
+    "Others": {
+      "type": "string"
+    }
+  }
+}

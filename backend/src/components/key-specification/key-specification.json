@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_key_specs",
+  "info": {
+    "displayName": "KeySpecification",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Displays": {
+      "type": "component",
+      "repeatable": false,
+      "component": "displays.displays"
+    },
+    "Cameras": {
+      "type": "component",
+      "repeatable": false,
+      "component": "cameras.cameras"
+    },
+    "Batteries": {
+      "type": "component",
+      "repeatable": false,
+      "component": "batteries.batteries"
+    },
+    "Storages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "storages.storages"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_displays_displays",
+  "info": {
+    "displayName": "Displays"
+  },
+  "options": {},
+  "attributes": {
+    "Primary": {
+      "type": "string"
+    },
+    "Secondary": {
+      "type": "string"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

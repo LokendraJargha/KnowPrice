@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_specification_list_specification_lists",
+  "info": {
+    "displayName": "SpecificationList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SpecificationLabel": {
+      "type": "string"
+    },
+    "SpecificationValue": {
+      "type": "string"
+    }
+  }
+}

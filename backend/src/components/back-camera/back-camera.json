@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_back_camera_back_cameras",
+  "info": {
+    "displayName": "BACK_CAMERA",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Setup": {
+      "type": "string"
+    },
+    "Resolution": {
+      "type": "text"
+    },
+    "Video": {
+      "type": "string"
+    },
+    "Features": {
+      "type": "string"
+    }
+  }
+}

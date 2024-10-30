@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_display_displays",
+  "info": {
+    "displayName": "DISPLAY",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "Size": {
+      "type": "string"
+    },
+    "Resolution": {
+      "type": "text"
+    },
+    "Protection": {
+      "type": "string"
+    },
+    "Others": {
+      "type": "text"
+    }
+  }
+}

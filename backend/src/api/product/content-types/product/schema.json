@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "products"
+    },
+    "sub_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sub-category.sub-category",
+      "mappedBy": "products"
+    },
+    "Price": {
+      "displayName": "Price",
+      "type": "component",
+      "repeatable": true,
+      "component": "price.price",
+      "required": true
+    },
+    "ProductImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title",
+      "required": true
+    },
+    "ProductDescription": {
+      "type": "blocks",
+      "required": true
+    },
+    "Specification": {
+      "displayName": "Specification",
+      "type": "component",
+      "repeatable": true,
+      "component": "specification.specification",
+      "required": false
+    },
+    "KeySpecification": {
+      "displayName": "KeySpecification",
+      "type": "component",
+      "repeatable": true,
+      "component": "key-specification.key-specification",
+      "required": true
+    },
+    "ProductInfo": {
+      "displayName": "ProductInfo",
+      "type": "component",
+      "repeatable": false,
+      "component": "product-info.product-info"
+    },
+    "MobileSpecification": {
+      "displayName": "MobileSpecification",
+      "type": "component",
+      "repeatable": false,
+      "component": "mobile-specification.mobile-specification"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ReleasedDate": {
+      "type": "date"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

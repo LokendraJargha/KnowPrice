@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "author_infos",
+  "info": {
+    "singularName": "author-info",
+    "pluralName": "author-infos",
+    "displayName": "AuthorInfo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UserName": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "ProfilePhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Facebook": {
+      "type": "string"
+    },
+    "Instragram": {
+      "type": "string"
+    },
+    "LinkedIn": {
+      "type": "string"
+    },
+    "Twitter": {
+      "type": "string"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "author_infos"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "UserName"
+    }
+  }
+}

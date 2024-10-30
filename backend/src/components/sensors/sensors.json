@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sensors_sensors",
+  "info": {
+    "displayName": "SENSORS",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Fingerprint": {
+      "type": "string"
+    },
+    "Others": {
+      "type": "string"
+    }
+  }
+}

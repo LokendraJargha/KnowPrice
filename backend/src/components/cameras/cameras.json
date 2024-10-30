@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_cameras_cameras",
+  "info": {
+    "displayName": "Cameras"
+  },
+  "options": {},
+  "attributes": {
+    "Primary": {
+      "type": "string"
+    },
+    "Secondary": {
+      "type": "string"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

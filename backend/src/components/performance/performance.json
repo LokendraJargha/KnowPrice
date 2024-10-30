@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_performance_performances",
+  "info": {
+    "displayName": "PERFORMANCE",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Chipset": {
+      "type": "string"
+    },
+    "CPU": {
+      "type": "text"
+    },
+    "Graphics": {
+      "type": "string"
+    },
+    "OS": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_multimedia_multimedias",
+  "info": {
+    "displayName": "Multimedia",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Jack": {
+      "type": "string"
+    },
+    "Speakers": {
+      "type": "string"
+    },
+    "Microphones": {
+      "type": "string"
+    },
+    "Others": {
+      "type": "string"
+    }
+  }
+}

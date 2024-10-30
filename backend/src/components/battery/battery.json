@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_battery_batteries",
+  "info": {
+    "displayName": "BATTERY",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "Charging": {
+      "type": "string"
+    },
+    "Others": {
+      "type": "text"
+    }
+  }
+}

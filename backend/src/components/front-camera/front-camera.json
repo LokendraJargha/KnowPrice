@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_front_camera_front_cameras",
+  "info": {
+    "displayName": "FRONT_CAMERA",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Setup": {
+      "type": "string"
+    },
+    "Resolution": {
+      "type": "text"
+    },
+    "Video": {
+      "type": "string"
+    },
+    "Features": {
+      "type": "string"
+    }
+  }
+}

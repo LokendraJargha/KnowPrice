@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_price_prices",
+  "info": {
+    "displayName": "Price"
+  },
+  "options": {},
+  "attributes": {
+    "Variant": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "string"
+    }
+  }
+}

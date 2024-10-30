@@ -1,0 +1,69 @@
+{
+  "collectionName": "components_mobile_spec",
+  "info": {
+    "displayName": "MobileSpecification",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "BODY": {
+      "displayName": "BODY",
+      "type": "component",
+      "repeatable": false,
+      "component": "body.body"
+    },
+    "DISPLAY": {
+      "displayName": "DISPLAY",
+      "type": "component",
+      "repeatable": false,
+      "component": "display.display"
+    },
+    "PERFORMANCE": {
+      "displayName": "PERFORMANCE",
+      "type": "component",
+      "repeatable": false,
+      "component": "performance.performance"
+    },
+    "MEMORY": {
+      "displayName": "MEMORY",
+      "type": "component",
+      "repeatable": false,
+      "component": "memory.memory"
+    },
+    "CONNECTIVITY": {
+      "displayName": "CONNECTIVITY",
+      "type": "component",
+      "repeatable": false,
+      "component": "connectivity.connectivity"
+    },
+    "MEDIA": {
+      "displayName": "Multimedia",
+      "type": "component",
+      "repeatable": false,
+      "component": "multimedia.multimedia"
+    },
+    "SENSORS": {
+      "displayName": "SENSORS",
+      "type": "component",
+      "repeatable": false,
+      "component": "sensors.sensors"
+    },
+    "BATTERY": {
+      "displayName": "BATTERY",
+      "type": "component",
+      "repeatable": false,
+      "component": "battery.battery"
+    },
+    "FRONT_CAMERA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "front-camera.front-camera"
+    },
+    "MAIN_CAMERA": {
+      "displayName": "BACK_CAMERA",
+      "type": "component",
+      "repeatable": false,
+      "component": "back-camera.back-camera"
+    }
+  }
+}

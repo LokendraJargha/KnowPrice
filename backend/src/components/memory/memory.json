@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_memory_memories",
+  "info": {
+    "displayName": "MEMORY"
+  },
+  "options": {},
+  "attributes": {
+    "RAM": {
+      "type": "string"
+    },
+    "Storage": {
+      "type": "string"
+    }
+  }
+}
