@@ -4,7 +4,8 @@ import Link from "next/link";
 import React from "react";
 
 const SecondaryBlogCard = ({ blogs }) => {
-  const { Title, Slug, FeaturedImage, createdAt } = blogs?.attributes;
+  const { Title, Slug, FeaturedImage, createdAt, createdBy } =
+    blogs?.attributes;
   const imageUrl = `${FeaturedImage?.data?.attributes?.url}`;
 
   return (
@@ -24,9 +25,16 @@ const SecondaryBlogCard = ({ blogs }) => {
                 {/* Mobile */}
               </span>
               <h2 className="text-gray-900 h-24 md:h-16 text-base sm:text-lg title-font font-medium mb-1">
-                {truncateText(Title, 50)}
+                {truncateText(Title, 49)}
               </h2>
-              <em className="text-xs py-2">Posted {dateFormat(createdAt)}</em>
+              <span className="w-fit leading-relaxed text-sm font-black text-gray-900 mr-1">
+                <Link
+                  href={`/blog/author/${createdBy?.data?.attributes?.username}`}
+                >
+                  {createdBy?.data?.attributes?.username || "KnoPrice"},
+                </Link>
+              </span>
+              <em className="text-xs py-1">Posted {dateFormat(createdAt)}</em>
             </div>
           </div>
         </Link>

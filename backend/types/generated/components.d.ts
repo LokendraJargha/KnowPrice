@@ -142,6 +142,27 @@ export interface PricePrice extends Schema.Component {
   };
 }
 
+export interface MobileSpecificationMobileSpecification
+  extends Schema.Component {
+  collectionName: 'components_mobile_spec';
+  info: {
+    displayName: 'MobileSpecification';
+    description: '';
+  };
+  attributes: {
+    BODY: Attribute.Component<'body.body'>;
+    DISPLAY: Attribute.Component<'display.display'>;
+    PERFORMANCE: Attribute.Component<'performance.performance'>;
+    MEMORY: Attribute.Component<'memory.memory'>;
+    CONNECTIVITY: Attribute.Component<'connectivity.connectivity'>;
+    MEDIA: Attribute.Component<'multimedia.multimedia'>;
+    SENSORS: Attribute.Component<'sensors.sensors'>;
+    BATTERY: Attribute.Component<'battery.battery'>;
+    FRONT_CAMERA: Attribute.Component<'front-camera.front-camera'>;
+    MAIN_CAMERA: Attribute.Component<'back-camera.back-camera'>;
+  };
+}
+
 export interface PerformancePerformance extends Schema.Component {
   collectionName: 'components_performance_performances';
   info: {
@@ -156,21 +177,6 @@ export interface PerformancePerformance extends Schema.Component {
   };
 }
 
-export interface MultimediaMultimedia extends Schema.Component {
-  collectionName: 'components_multimedia_multimedias';
-  info: {
-    displayName: 'Multimedia';
-    icon: 'bulletList';
-    description: '';
-  };
-  attributes: {
-    Jack: Attribute.String;
-    Speakers: Attribute.String;
-    Microphones: Attribute.String;
-    Others: Attribute.String;
-  };
-}
-
 export interface KeySpecificationKeySpecification extends Schema.Component {
   collectionName: 'components_key_specs';
   info: {
@@ -182,20 +188,6 @@ export interface KeySpecificationKeySpecification extends Schema.Component {
     Cameras: Attribute.Component<'cameras.cameras'>;
     Batteries: Attribute.Component<'batteries.batteries'>;
     Storages: Attribute.Component<'storages.storages'>;
-  };
-}
-
-export interface FrontCameraFrontCamera extends Schema.Component {
-  collectionName: 'components_front_camera_front_cameras';
-  info: {
-    displayName: 'FRONT_CAMERA';
-    description: '';
-  };
-  attributes: {
-    Setup: Attribute.String;
-    Resolution: Attribute.Text;
-    Video: Attribute.String;
-    Features: Attribute.String;
   };
 }
 
@@ -226,6 +218,32 @@ export interface DisplayDisplay extends Schema.Component {
   };
 }
 
+export interface MemoryMemory extends Schema.Component {
+  collectionName: 'components_memory_memories';
+  info: {
+    displayName: 'MEMORY';
+  };
+  attributes: {
+    RAM: Attribute.String;
+    Storage: Attribute.String;
+  };
+}
+
+export interface MultimediaMultimedia extends Schema.Component {
+  collectionName: 'components_multimedia_multimedias';
+  info: {
+    displayName: 'Multimedia';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    Jack: Attribute.String;
+    Speakers: Attribute.String;
+    Microphones: Attribute.String;
+    Others: Attribute.String;
+  };
+}
+
 export interface ConnectivityConnectivity extends Schema.Component {
   collectionName: 'components_connectivity_connectivities';
   info: {
@@ -241,6 +259,20 @@ export interface ConnectivityConnectivity extends Schema.Component {
   };
 }
 
+export interface FrontCameraFrontCamera extends Schema.Component {
+  collectionName: 'components_front_camera_front_cameras';
+  info: {
+    displayName: 'FRONT_CAMERA';
+    description: '';
+  };
+  attributes: {
+    Setup: Attribute.String;
+    Resolution: Attribute.Text;
+    Video: Attribute.String;
+    Features: Attribute.String;
+  };
+}
+
 export interface CamerasCameras extends Schema.Component {
   collectionName: 'components_cameras_cameras';
   info: {
@@ -250,6 +282,19 @@ export interface CamerasCameras extends Schema.Component {
     Primary: Attribute.String;
     Secondary: Attribute.String;
     Icon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface BatteryBattery extends Schema.Component {
+  collectionName: 'components_battery_batteries';
+  info: {
+    displayName: 'BATTERY';
+    description: '';
+  };
+  attributes: {
+    Type: Attribute.String;
+    Charging: Attribute.String;
+    Others: Attribute.Text;
   };
 }
 
@@ -267,16 +312,17 @@ export interface BodyBody extends Schema.Component {
   };
 }
 
-export interface BatteryBattery extends Schema.Component {
-  collectionName: 'components_battery_batteries';
+export interface BackCameraBackCamera extends Schema.Component {
+  collectionName: 'components_back_camera_back_cameras';
   info: {
-    displayName: 'BATTERY';
+    displayName: 'BACK_CAMERA';
     description: '';
   };
   attributes: {
-    Type: Attribute.String;
-    Charging: Attribute.String;
-    Others: Attribute.Text;
+    Setup: Attribute.String;
+    Resolution: Attribute.Text;
+    Video: Attribute.String;
+    Features: Attribute.String;
   };
 }
 
@@ -293,52 +339,6 @@ export interface BatteriesBatteries extends Schema.Component {
   };
 }
 
-export interface MobileSpecificationMobileSpecification
-  extends Schema.Component {
-  collectionName: 'components_mobile_spec';
-  info: {
-    displayName: 'MobileSpecification';
-    description: '';
-  };
-  attributes: {
-    BODY: Attribute.Component<'body.body'>;
-    DISPLAY: Attribute.Component<'display.display'>;
-    PERFORMANCE: Attribute.Component<'performance.performance'>;
-    MEMORY: Attribute.Component<'memory.memory'>;
-    CONNECTIVITY: Attribute.Component<'connectivity.connectivity'>;
-    MEDIA: Attribute.Component<'multimedia.multimedia'>;
-    SENSORS: Attribute.Component<'sensors.sensors'>;
-    BATTERY: Attribute.Component<'battery.battery'>;
-    FRONT_CAMERA: Attribute.Component<'front-camera.front-camera'>;
-    MAIN_CAMERA: Attribute.Component<'back-camera.back-camera'>;
-  };
-}
-
-export interface BackCameraBackCamera extends Schema.Component {
-  collectionName: 'components_back_camera_back_cameras';
-  info: {
-    displayName: 'BACK_CAMERA';
-    description: '';
-  };
-  attributes: {
-    Setup: Attribute.String;
-    Resolution: Attribute.Text;
-    Video: Attribute.String;
-    Features: Attribute.String;
-  };
-}
-
-export interface MemoryMemory extends Schema.Component {
-  collectionName: 'components_memory_memories';
-  info: {
-    displayName: 'MEMORY';
-  };
-  attributes: {
-    RAM: Attribute.String;
-    Storage: Attribute.String;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -352,20 +352,20 @@ declare module '@strapi/types' {
       'security.security': SecuritySecurity;
       'product-info.product-info': ProductInfoProductInfo;
       'price.price': PricePrice;
+      'mobile-specification.mobile-specification': MobileSpecificationMobileSpecification;
       'performance.performance': PerformancePerformance;
-      'multimedia.multimedia': MultimediaMultimedia;
       'key-specification.key-specification': KeySpecificationKeySpecification;
-      'front-camera.front-camera': FrontCameraFrontCamera;
       'displays.displays': DisplaysDisplays;
       'display.display': DisplayDisplay;
-      'connectivity.connectivity': ConnectivityConnectivity;
-      'cameras.cameras': CamerasCameras;
-      'body.body': BodyBody;
-      'battery.battery': BatteryBattery;
-      'batteries.batteries': BatteriesBatteries;
-      'mobile-specification.mobile-specification': MobileSpecificationMobileSpecification;
-      'back-camera.back-camera': BackCameraBackCamera;
       'memory.memory': MemoryMemory;
+      'multimedia.multimedia': MultimediaMultimedia;
+      'connectivity.connectivity': ConnectivityConnectivity;
+      'front-camera.front-camera': FrontCameraFrontCamera;
+      'cameras.cameras': CamerasCameras;
+      'battery.battery': BatteryBattery;
+      'body.body': BodyBody;
+      'back-camera.back-camera': BackCameraBackCamera;
+      'batteries.batteries': BatteriesBatteries;
     }
   }
 }

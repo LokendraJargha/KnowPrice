@@ -12,7 +12,9 @@ const BlogsList = () => {
   const currentPage = Number(searchParams.get("page")) || 1;
   const [blogs, setBlogs] = useState(null);
 
-  const dataFetch = async (page = 1, pageSize = 5) => {
+  console.log("blog", blogs);
+
+  const dataFetch = async (page = 1, pageSize = 6) => {
     const query = qs.stringify({
       populate: "*",
       pagination: {

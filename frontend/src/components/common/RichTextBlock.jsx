@@ -36,7 +36,7 @@ const RichTextBlock = ({ content }) => {
                 className="pb-4"
                 src={image.url}
                 width={900}
-                height={200}
+                height={100}
                 alt={image.alternativeText || ""}
               />
             );

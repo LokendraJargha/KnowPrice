@@ -14,6 +14,7 @@ import fetchData from "@/service/fetchData";
 
 const TechStories = () => {
   const [blog, setBlog] = useState();
+
   const dataFetch = async () => {
     try {
       const blogs = await fetchData("api/blogs", blogQuery);

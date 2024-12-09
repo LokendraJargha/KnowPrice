@@ -7,7 +7,7 @@ const BlogsListCard = ({ blogs }) => {
   const { Title, Slug, FeaturedImage, createdAt, createdBy } =
     blogs?.attributes;
   const imageUrl = `${FeaturedImage?.data?.attributes?.url}`;
-  console.log("write", blogs);
+  // console.log("write", blogs);
 
   return (
     <section className="text-gray-600 body-font py-4">

@@ -32,7 +32,7 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  console.log("sha", shadow);
+  // console.log("sha", shadow);
   return (
     <nav
       className={`${
